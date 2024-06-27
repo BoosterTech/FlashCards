@@ -1,22 +1,25 @@
 import { useState } from "react";
-import "./App.css";
 import questions from "./questions";
+import { Card, Wrapper } from "./styled";
 
 function App() {
   const [questionId, setQuestionId] = useState(null);
-
   const handleClick = (id) => {
     setQuestionId(id === questionId ? null : id);
   };
 
   return (
-    <div>
+    <Wrapper>
       {questions.map((question) => (
-        <div key={question.id} onClick={() => handleClick(question.id)}>
+        <Card
+          key={question.id}
+          onClick={() => handleClick(question.id)}
+          $selected={questionId === question.id}
+        >
           {questionId === question.id ? question.answer : question.question}
-        </div>
+        </Card>
       ))}
-    </div>
+    </Wrapper>
   );
 }
 
