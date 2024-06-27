@@ -6,7 +6,7 @@ function App() {
   const [questionId, setQuestionId] = useState(null);
 
   const handleClick = (id) => {
-    setQuestionId(id);
+    setQuestionId(id === questionId ? null : id);
   };
 
   return (
