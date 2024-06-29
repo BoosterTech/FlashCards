@@ -9,6 +9,27 @@ export const Wrapper = styled.div`
   gap: 20px;
 `;
 
+export const Header = styled.h1`
+  display: block;
+  margin: 1px0;
+  text-align: center;
+  border: 1px solid darkgrey;
+  border-radius: 5px;
+  padding: 10px 3px;
+  background-color: lightgrey;
+
+  @media (max-width: 680px) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 380px) {
+    font-size: 1rem;
+  }
+  @media (max-width: 270px) {
+    font-size: 0.8rem;
+  }
+`;
+
 export const Card = styled.div`
   border: 1px solid darkgrey;
   background-color: #f7f7f7;
