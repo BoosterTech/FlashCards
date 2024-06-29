@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.main`
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
@@ -9,13 +9,16 @@ export const Wrapper = styled.div`
   gap: 20px;
 `;
 
-export const Header = styled.h1`
+export const Header = styled.header`
   display: block;
-  margin: 1px0;
+  font-size: 2rem;
+  font-weight: 700;
+  max-width: fit-content;
+  margin: 5px auto 25px auto;
   text-align: center;
   border: 1px solid darkgrey;
   border-radius: 5px;
-  padding: 10px 3px;
+  padding: 10px 25px;
   background-color: lightgrey;
 
   @media (max-width: 680px) {
