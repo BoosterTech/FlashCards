@@ -1,6 +1,6 @@
 import { useState } from "react";
 import questions from "./questions";
-import { Card, Wrapper } from "./styled";
+import { Card, Header, Wrapper } from "./styled";
 
 function App() {
   const [questionId, setQuestionId] = useState(null);
@@ -9,17 +9,20 @@ function App() {
   };
 
   return (
-    <Wrapper>
-      {questions.map((question) => (
-        <Card
-          key={question.id}
-          onClick={() => handleClick(question.id)}
-          $selected={questionId === question.id}
-        >
-          {questionId === question.id ? question.answer : question.question}
-        </Card>
-      ))}
-    </Wrapper>
+    <>
+      <Header>Learn React with Flash Cards</Header>
+      <Wrapper>
+        {questions.map((question) => (
+          <Card
+            key={question.id}
+            onClick={() => handleClick(question.id)}
+            $selected={questionId === question.id}
+          >
+            {questionId === question.id ? question.answer : question.question}
+          </Card>
+        ))}
+      </Wrapper>
+    </>
   );
 }
 
