@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <Header>Learn React with Flash Cards</Header>
+      <Header>React Flash Cards</Header>
       <Wrapper>
         {questions.map((question) => (
           <Card
