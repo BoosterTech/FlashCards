@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/FlashCards/static/css/main.57e126d2.css",
-    "main.js": "/FlashCards/static/js/main.51efb3e1.js",
+    "main.js": "/FlashCards/static/js/main.bf8ce371.js",
     "index.html": "/FlashCards/index.html",
     "main.57e126d2.css.map": "/FlashCards/static/css/main.57e126d2.css.map",
-    "main.51efb3e1.js.map": "/FlashCards/static/js/main.51efb3e1.js.map"
+    "main.bf8ce371.js.map": "/FlashCards/static/js/main.bf8ce371.js.map"
   },
   "entrypoints": [
     "static/css/main.57e126d2.css",
-    "static/js/main.51efb3e1.js"
+    "static/js/main.bf8ce371.js"
   ]
 }
