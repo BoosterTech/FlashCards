@@ -2,6 +2,10 @@
 
 Welcome to Flash Cards React! This project is a simple flashcard application designed to help users learn about React. The app is available for both PC and mobile versions.
 
+## Demo
+
+https://boostertech.github.io/FlashCards/
+
 ## Table of Contents
 
 - [Features](#features)
